@@ -318,7 +318,7 @@ svg {
   padding: 17px 0;
 }
 .header__logo-link {
-  background: url(../../img/logo.png) no-repeat scroll 0 0;
+  background: url(../img/logo.png) no-repeat scroll 0 0;
   padding-top: 40px;
   width: 100%;
   min-width: 210px;
@@ -832,9 +832,11 @@ svg {
     padding-right: 0;
   }
 }
-.wrapper__content-75 {
-  max-width: 75%;
-  padding-right: 20px;
+@media screen and (min-width: 1280px) {
+  .wrapper__content-75 {
+    max-width: 75%;
+    padding-right: 20px;
+  }
 }
 .wrapper__sidebar {
   width: 25%;
@@ -1048,6 +1050,7 @@ svg {
 .scrollableList {
   display: none;
   margin-top: 50px;
+  position: relative;
 }
 @media screen and (max-width: 1279px) {
   .scrollableList {
@@ -1069,11 +1072,21 @@ svg {
   position: relative;
   margin-left: -16px;
   left: 0;
-  padding: 10px 16px;
+  padding: 10px 0px 10px 16px;
   -ms-scroll-snap-type: x proximity;
   scroll-snap-type: x proximity;
   scroll-padding: 0 20px;
   scrollbar-width: none;
+}
+.scrollableList__items::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.scrollableList__items:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
 }
 .scrollableList__item {
   padding: 20px;
