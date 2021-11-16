@@ -7,9 +7,10 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#34495E">
-  <title>Спраго Технологии - Автоматизация аптечного бизнеса</title>
+  <title>404 ошибка - Спраго Технологии - Автоматизация аптечного бизнеса</title>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
 </head>
 
 <body>
@@ -117,15 +118,39 @@
     <div class="breadcrumbs">
       <div class="container">
         <div class="breadcrumbs__title">
-          Полезные материалы
+          Ошибка 404
         </div>
         <ul class="breadcrumbs__list list-reset">
-          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link" title="#">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link" title="#">Пресс-центр</a></li>
-          <li class="breadcrumbs__item"><span class="breadcrumbs__active">Новости компании</span></li>
+          <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link" title="Главная">Главная</a></li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__active">Страница не найдена</span></li>
         </ul>
       </div>
     </div>
+
+    <div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="wrapper__content text__block">
+                <div class="error_page">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#error_page"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="footnote">
+            <div class="footnote__content">
+                <div class="footnote__title">
+                    Страница не найдена!
+                </div>
+                Воспользуйтесь поиском или <a href="/" title="Главная страница">перейдите</a> на главную страницу сайта.
+            </div>
+        </div>
+    </div>
+</div>
     
     <div class="main__indent">
 
@@ -251,6 +276,7 @@
   </div>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 
 </html>
