@@ -2603,9 +2603,8 @@ details[open] summary ~ * {
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
-  text-decoration: underline;
-  -webkit-text-decoration-style: dashed;
-  text-decoration-style: dashed;
+  /*text-decoration:underline;
+  text-decoration-style: dashed;*/
 }
 @media screen and (max-width: 1279px) {
   .vacancies__block-department {
