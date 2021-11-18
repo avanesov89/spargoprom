@@ -277,6 +277,9 @@ svg {
     padding-right: 0;
   }
 }
+.footnote__content a {
+  color: var(--corporate-v-0);
+}
 .footnote__title {
   font-weight: 700;
   display: block;
@@ -1777,6 +1780,9 @@ details[open] summary ~ * {
     text-align: right;
   }
 }
+.partners__contacts-item a {
+  color: var(--color-gray-900);
+}
 @media screen and (max-width: 1023px) {
   .partners__contacts {
     grid-template-columns: 1fr;
@@ -2670,14 +2676,24 @@ details[open] summary ~ * {
   }
 }
 .vacancies__bottom {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 10px;
   width: 100%;
 }
-.vacancies__bottom .main__button {
-  padding: 10px 15px;
-  font-size: 15px;
+@media screen and (max-width: 767px) {
+  .vacancies__bottom {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .vacancies__bottom .main__button {
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 0;
+  }
+}
+.vacancies__bottom .main__button:not(:last-child) {
+  margin-right: 30px;
 }
 .vacancies__buttons {
   background: #FFFFFF;
@@ -2686,6 +2702,40 @@ details[open] summary ~ * {
   display: flex;
   justify-content: space-between;
   padding: 15px 10px;
+}
+@media screen and (min-width: 1280px) {
+  .vacancies__buttons {
+    box-shadow: none;
+    border-top: 1px solid var(--color-gray-200);
+    border-radius: 0;
+    padding: 30px 0 0 0;
+    margin-top: 30px;
+    justify-content: flex-start;
+  }
+}
+.vacancies__salary {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--corporate-v-1);
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .vacancies__salary {
+    font-size: 18px;
+  }
+}
+.vacancies__info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.vacancies__info-item {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--corporate-v-0);
+}
+.vacancies__info-item:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 767px) {
