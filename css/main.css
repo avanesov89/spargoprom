@@ -2890,7 +2890,7 @@ details[open] .vacancies__block-department {
   .about__all .scrollableList__items {
     width: 100%;
     margin-left: 0;
-    padding: 10px 0 0;
+    padding: 10px 0 5px;
   }
 }
 .about__all-block {
