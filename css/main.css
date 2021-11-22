@@ -2670,8 +2670,11 @@ details[open] summary ~ * {
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
-  /*text-decoration:underline;
-  text-decoration-style: dashed;*/
+  text-decoration: underline;
+  -webkit-text-decoration-style: dashed;
+  text-decoration-style: dashed;
+  position: relative;
+  padding-right: 10px;
 }
 @media screen and (max-width: 1279px) {
   .vacancies__block-department {
@@ -2683,7 +2686,10 @@ details[open] summary ~ * {
   font-size: 14px;
   font-weight: 600;
   color: var(--corporate-v-0);
-  margin-left: 5px;
+  position: absolute;
+  top: 0;
+  right: -35px;
+  min-width: 40px;
 }
 .vacancies__open {
   display: flex;
