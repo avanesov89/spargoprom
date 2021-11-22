@@ -59,4 +59,16 @@ $('.show-left').on('click', function (event) {
   $('.side-right').addClass('shifted');
   $('.side-left').removeClass('shifted');
 });
+$(".header__search").click(function () {
+  $(".search__fixed").css({
+    "display": "block"
+  });
+});
+$(document).mouseup(function (e) {
+  var div = $(".search__fixed");
+
+  if (!div.is(e.target) && div.has(e.target).length === 0) {
+    div.hide();
+  }
+});
 //# sourceMappingURL=main.js.map
