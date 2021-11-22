@@ -2761,4 +2761,216 @@ details[open] summary ~ * {
 details[open] .vacancies__block-department {
   font-weight: 800;
 }
+
+.about__director {
+  background-color: var(--color-gray-100);
+  padding: 50px 0;
+  margin: 55px 0;
+  width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .about__director {
+    padding: 40px 0;
+    margin: 30px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__director {
+    padding: 30px 0;
+    margin: 30px 0;
+  }
+}
+.about__director-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .about__director-block {
+    flex-direction: column;
+  }
+}
+.about__director-photo {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about__director-photo {
+    flex-direction: column;
+  }
+}
+.about__director-img {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0px 2px 6px rgba(52, 73, 94, 0.15);
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  margin-right: 50px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 767px) {
+  .about__director-img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+}
+.about__director-image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.about__director-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: var(--corporate-v-1);
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about__director-name {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .about__director-name {
+    display: none;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.about__director-name--mobail {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .about__director-name--mobail {
+    display: block;
+  }
+}
+.about__director-status {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  color: var(--corporate-v-1);
+}
+@media screen and (max-width: 767px) {
+  .about__director-status {
+    margin-top: 10px;
+  }
+}
+.about__director-quote {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--corporate-v-1);
+  margin-top: 25px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about__director-quote {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__director-quote {
+    margin-top: 15px;
+  }
+}
+.about__all {
+  padding-top: 40px;
+  border-top: 1px solid var(--color-gray-200);
+}
+.about__all.scrollableList {
+  display: block;
+}
+@media screen and (min-width: 1280px) {
+  .about__all .scrollableList__items {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 0 0;
+  }
+}
+.about__all-block {
+  box-shadow: 0px 2px 6px rgba(52, 73, 94, 0.15);
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+.about__all-block:not(:last-child) {
+  margin-right: 20px;
+}
+@media screen and (max-width: 767px) {
+  .about__all-block:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+.about__all-item {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  min-width: 337px;
+  height: 100%;
+  color: var(--corporate-v-1);
+  transition: all 0.2s;
+}
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .about__all-item {
+    min-width: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__all-item {
+    padding: 25px;
+    min-width: auto;
+  }
+}
+.about__all-item svg {
+  fill: var(--corporate-v-1);
+  transition: all 0.2s;
+}
+.about__all-item:hover, .about__all-item:focus {
+  color: var(--corporate-v-3);
+  transition: all 0.2s;
+}
+.about__all-item:hover svg, .about__all-item:focus svg {
+  fill: var(--corporate-v-3);
+  transition: all 0.2s;
+}
+.about__all-img {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+.about__all-img svg {
+  width: 56px;
+  height: 56px;
+}
+@media screen and (max-width: 767px) {
+  .about__all-img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+  }
+  .about__all-img svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+.about__all-image {
+  width: 100%;
+  height: 100%;
+}
+.about__all-title {
+  font-size: 22px;
+  line-height: 28px;
+}
+@media screen and (max-width: 767px) {
+  .about__all-title {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+}
 /*# sourceMappingURL=main.css.map */
