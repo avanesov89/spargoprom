@@ -466,7 +466,6 @@ details {
   transition: min-height 1.15s linear, max-height 1.5s linear;
   -webkit-transition: min-height 1.15s linear, max-height 1.5s linear;
   will-change: max-height;
-  overflow: hidden;
   width: 100%;
 }
 details summary {
@@ -2661,35 +2660,41 @@ details[open] summary ~ * {
 }
 @media screen and (max-width: 767px) {
   .vacancies__block-item {
-    align-items: flex-start;
-    justify-content: space-between;
+    display: block;
   }
 }
 .vacancies__block-department {
-  color: var(--corporate-v-2);
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
-  text-decoration: underline;
-  -webkit-text-decoration-style: dashed;
-  text-decoration-style: dashed;
-  position: relative;
-  padding-right: 10px;
+  padding-right: 5px;
+  display: inline;
 }
 @media screen and (max-width: 1279px) {
   .vacancies__block-department {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
+.vacancies__block-department span {
+  position: relative;
+  background-image: linear-gradient(90deg, rgba(51, 122, 183, 0.5), rgba(51, 122, 183, 0.5) 60%, transparent 0, transparent);
+  background-position: 0 bottom;
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+  color: var(--corporate-v-2);
+}
 .vacancies__block-counter {
-  font-size: 14px;
   font-weight: 600;
   color: var(--corporate-v-0);
-  position: absolute;
+  display: inline-block;
+  /*position: absolute;
   top: 0;
   right: -35px;
-  min-width: 40px;
+  min-width: 40px;*/
+}
+.vacancies__block details summary {
+  display: block;
 }
 .vacancies__open {
   display: flex;
