@@ -3634,4 +3634,29 @@ details[open] .vacancies__block-department {
   background-color: var(--corporate-v-2);
   width: 40px;
 }
+
+.wrapper table {
+  border-collapse: collapse;
+}
+.wrapper table thead {
+  background-color: var(--color-gray-100);
+}
+.wrapper table thead th {
+  border-color: var(--color-gray-200);
+  border-top: 1px solid var(--color-gray-200);
+  font-weight: 700;
+}
+.wrapper table th, .wrapper table td {
+  padding: 10px;
+  text-align: left;
+  border-left: 1px solid var(--color-gray-200);
+  border-bottom: 1px solid var(--color-gray-200);
+  font-size: 14px;
+}
+.wrapper table th:last-child, .wrapper table td:last-child {
+  border-right: 1px solid var(--color-gray-200);
+}
+.wrapper table th ul, .wrapper table td ul {
+  margin-bottom: 0 !important;
+}
 /*# sourceMappingURL=main.css.map */
