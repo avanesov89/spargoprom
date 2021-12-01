@@ -3659,4 +3659,341 @@ details[open] .vacancies__block-department {
 .wrapper table th ul, .wrapper table td ul {
   margin-bottom: 0 !important;
 }
+
+.main__slaider {
+  background-image: url(../img/main__slaider.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  min-height: 410px;
+  padding: 80px 0;
+  margin-bottom: 90px;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .main__slaider {
+    padding: 50px 0;
+  }
+}
+.main__slaider-content {
+  max-width: 800px;
+}
+.main__slaider-title {
+  color: var(--color-gray-100);
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .main__slaider-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.main__slaider-description {
+  color: var(--color-gray-100);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .main__slaider-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.main__slaider-list {
+  position: absolute;
+  bottom: -85px;
+  z-index: 10;
+  padding: 0 20px;
+}
+@media screen and (max-width: 1919px) {
+  .main__slaider-list {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .main__slaider-list {
+    padding: 0;
+  }
+}
+
+.business__list {
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 1399px) {
+  .business__list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100vw;
+    position: relative;
+    left: 0;
+    padding: 10px 16px 10px 16px;
+    -ms-scroll-snap-type: x proximity;
+    scroll-snap-type: x proximity;
+    scroll-padding: 0 20px;
+    scrollbar-width: none;
+  }
+  .business__list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+.business__list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 6px rgba(52, 73, 94, 0.15);
+  max-width: 360px;
+}
+.business__list-item:not(:last-child) {
+  margin-right: 20px;
+}
+@media screen and (max-width: 1399px) {
+  .business__list-item {
+    min-width: 270px;
+    padding: 20px;
+  }
+  .business__list-item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+.business__list-link {
+  color: var(--corporate-v-1);
+}
+.business__list-link:focus, .business__list-link:hover {
+  color: var(--corporate-v-2);
+}
+.business__list-title {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 270px;
+}
+.business__list-image {
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: 15px;
+}
+.business__list-content {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.main__action {
+  position: relative;
+  background-color: var(--corporate-v-2);
+  width: 100%;
+  min-height: 178px;
+  padding: 50px 0;
+}
+.main__action::before {
+  content: "";
+  background-image: url(../img/call_to_action.svg);
+  background-repeat: no-repeat;
+  background-size: 105px 105px;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1279px) {
+  .main__action::before {
+    opacity: 0.3;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main__action::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main__action {
+    padding: 35px 0;
+  }
+}
+.main__action .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1023px) {
+  .main__action .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.main__action-content {
+  color: var(--color-gray-100);
+  max-width: 930px;
+}
+.main__action-title {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0;
+}
+.main__action-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  margin: 15px 0 0;
+}
+.main__action .main__button {
+  background-color: var(--color-gray-100);
+  border: 2px solid transparent;
+  color: var(--corporate-v-2);
+  padding: 15px 35px;
+  font-size: 20px;
+}
+.main__action .main__button:hover, .main__action .main__button:focus {
+  background-color: var(--corporate-v-2);
+  color: var(--color-gray-100);
+  border-color: var(--color-gray-100);
+}
+@media screen and (max-width: 1023px) {
+  .main__action .main__button {
+    margin-top: 30px;
+  }
+}
+
+.main__title {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 600;
+  color: var(--corporate-v-0);
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1023px) {
+  .main__title {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+}
+.main__title-span {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--color-gray-700);
+  text-transform: lowercase;
+}
+@media screen and (max-width: 1023px) {
+  .main__title-span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.last__renewal {
+  padding: 80px 0;
+}
+@media screen and (max-width: 1023px) {
+  .last__renewal {
+    padding: 50px 0;
+  }
+}
+.last__renewal-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+@media screen and (max-width: 1399px) {
+  .last__renewal-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100vw;
+    position: relative;
+    left: 0;
+    padding: 10px 16px 10px 16px;
+    -ms-scroll-snap-type: x proximity;
+    scroll-snap-type: x proximity;
+    scroll-padding: 0 20px;
+    scrollbar-width: none;
+    grid-column-gap: 0;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  .last__renewal-list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+.last__renewal-item {
+  background-color: var(--color-gray-100);
+  border-radius: 10px;
+  box-shadow: 0px 1px 6px rgba(52, 73, 94, 0.15);
+  padding: 25px;
+  width: 100%;
+  min-width: 270px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1399px) {
+  .last__renewal-item {
+    padding: 20px;
+  }
+  .last__renewal-item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.last__renewal-title {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--corporate-v-0);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1399px) {
+  .last__renewal-title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.last__renewal-title:hover, .last__renewal-title:focus {
+  color: var(--corporate-v-2);
+}
+.last__renewal-date {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--corporate-v-3);
+  margin-bottom: 10px;
+}
+.last__renewal-content {
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--corporate-v-0);
+}
+.last__renewal .main__button {
+  margin: 50px auto 0;
+}
+@media screen and (max-width: 767px) {
+  .last__renewal .main__button {
+    margin-top: 30px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
