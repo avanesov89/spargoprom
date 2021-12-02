@@ -3649,7 +3649,7 @@ details[open] .vacancies__block-department {
   margin-top: 15px;
 }
 .app__all {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .app__all-list {
   display: flex;
@@ -3663,7 +3663,7 @@ details[open] .vacancies__block-department {
     width: 100vw;
     position: relative;
     left: -16px;
-    padding: 0 16px;
+    padding: 10px 16px;
     -ms-scroll-snap-type: x proximity;
     scroll-snap-type: x proximity;
     scroll-padding: 0 20px;
