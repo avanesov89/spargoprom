@@ -3605,16 +3605,16 @@ details[open] .vacancies__block-department {
   fill: var(--corporate-v-1);
   color: var(--corporate-v-1);
 }
-@media screen and (max-width: 767px) {
-  .app__modules-item {
-    min-width: 45%;
-    margin: 15px 0;
-  }
-}
 @media screen and (max-width: 1919px) {
   .app__modules-item {
     min-width: 33.33%;
     margin: 20px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .app__modules-item {
+    min-width: 45%;
+    margin: 15px 0;
   }
 }
 .app__modules-item:focus, .app__modules-item:hover {
