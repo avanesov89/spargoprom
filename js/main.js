@@ -78,4 +78,7 @@ $('.clients__list').slick({
   slidesToShow: 4,
   slidesToScroll: 4
 });
+var myModal = new HystModal({
+  linkAttributeName: "data-hystmodal"
+});
 //# sourceMappingURL=main.js.map
