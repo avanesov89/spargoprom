@@ -12,6 +12,7 @@ console.log('maxgraph');
   * @param {number} first - первое число
   * @returns {number}
   */
+console.log('test');
 var details = Array.from(document.querySelectorAll("details")); // Add the onclick listeners.
 
 details.forEach(function (targetDetail) {
@@ -77,8 +78,5 @@ $('.clients__list').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4
-});
-var myModal = new HystModal({
-  linkAttributeName: "data-hystmodal"
 });
 //# sourceMappingURL=main.js.map
