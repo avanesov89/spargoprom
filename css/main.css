@@ -3227,7 +3227,7 @@ details[open] .vacancies__block-department {
   top: 0;
   padding-top: env(safe-area-inset-top);
   padding-bottom: 20px;
-  background: var(--corporate-v-1);
+  background: var(--color-gray-300);
   box-shadow: none;
   transform: translateX(100%);
   transition: transform 0.4s 0s, box-shadow 0.4s 0s;
@@ -3237,18 +3237,18 @@ details[open] .vacancies__block-department {
   box-shadow: 0px 2px 6px rgba(52, 73, 94, 0.15);
 }
 .a-menu__title {
-  background: var(--corporate-v-0);
+  background: var(--color-gray-400);
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
   padding: 0 20px;
   line-height: 50px;
   width: 100%;
   font-size: 16px;
-  font-weight: 600;
-  color: var(--color-gray-100);
+  font-weight: 700;
+  color: var(--corporate-v-0);
 }
 .a-menu .close-trigger {
   cursor: pointer;
@@ -3257,7 +3257,7 @@ details[open] .vacancies__block-department {
   align-items: center;
 }
 .a-menu .close-trigger svg {
-  fill: var(--color-gray-100);
+  fill: var(--corporate-v-0);
   width: 25px;
   height: 25px;
 }
@@ -3298,20 +3298,21 @@ details[open] .vacancies__block-department {
 .a-menu .menu__link {
   display: flex;
   padding: 0 20px;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.5;
   height: 50px;
   align-items: center;
-  color: var(--color-gray-200);
+  color: var(--corporate-v-0);
   text-decoration: none;
 }
 .a-menu .menu__link:hover, .a-menu .menu__link:focus, .a-menu .menu__link:active {
-  color: var(--corporate-v-3);
+  color: var(--corporate-v-2);
 }
 .a-menu .sub-menu {
   height: 0;
   visibility: hidden;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--color-gray-400);
   transition: all 0.2s 0s, visibility 0s 0.2s;
 }
 .a-menu .sub-menu.open {
@@ -3335,7 +3336,7 @@ details[open] .vacancies__block-department {
   line-height: 20px;
   border: none;
   text-transform: none;
-  color: var(--color-gray-400);
+  color: var(--corporate-v-0);
   text-decoration: none;
   font-size: 14px;
 }
@@ -3347,7 +3348,7 @@ details[open] .vacancies__block-department {
   left: 25px;
 }
 .a-menu .sub-menu__link:hover, .a-menu .sub-menu__link:focus {
-  color: var(--corporate-v-3);
+  color: var(--corporate-v-2);
 }
 
 .app {
