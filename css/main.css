@@ -4589,6 +4589,8 @@ details[open] .vacancies__block-department {
   right: 0;
   left: 0;
   overflow: hidden;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .hystmodal__shadow {
@@ -4596,6 +4598,7 @@ details[open] .vacancies__block-department {
   border: none;
   display: block;
   width: 100%;
+  height: 100%;
   top: 0;
   bottom: 0;
   right: 0;
@@ -4629,6 +4632,9 @@ details[open] .vacancies__block-department {
   justify-content: flex-start;
   z-index: 99;
   visibility: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
 }
 
 .hystmodal--active {
@@ -4654,7 +4660,7 @@ details[open] .vacancies__block-department {
 }
 
 .hystmodal__window {
-  margin: 50px 0;
+  margin: 25px 0;
   box-sizing: border-box;
   flex-shrink: 0;
   flex-grow: 0;
@@ -4662,8 +4668,6 @@ details[open] .vacancies__block-department {
   width: 100%;
   max-width: 580px;
   overflow: visible;
-  transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
-  transform: scale(0.9);
   opacity: 0;
   border-radius: 10px;
   padding: 40px;
@@ -4692,6 +4696,7 @@ details[open] .vacancies__block-department {
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 @media screen and (max-width: 767px) {
   .hystmodal__close {
@@ -4702,12 +4707,9 @@ details[open] .vacancies__block-department {
 .hystmodal__close svg {
   width: 30px;
   height: 30px;
-}
-@media screen and (max-width: 767px) {
-  .hystmodal__close svg {
-    width: 20px;
-    height: 20px;
-  }
+  min-width: 30px;
+  min-height: 30px;
+  display: block;
 }
 .hystmodal__title {
   font-size: 26px;
