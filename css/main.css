@@ -100,6 +100,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: var(--color-gray-900);
+  padding: env(safe-area-inset-bottom, 20px);
 }
 
 img {
@@ -248,6 +249,18 @@ svg {
   background-color: var(--color-gray-100);
   color: var(--corporate-v-2);
   transition: all 0.2s;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 .footnote {
@@ -407,6 +420,20 @@ svg {
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
+}
+.main__form .custom-file {
+  display: block;
+  margin: 30px 0;
+}
+.main__form .custom-file {
+  background-color: green;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
 }
 .main__form-textarea {
   background-color: #fff;

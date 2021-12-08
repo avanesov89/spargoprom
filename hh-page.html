@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#34495E">
@@ -252,7 +252,10 @@
                             Файл с резюме
                         </label>
                         <div class="main__form-files">
-                            <input type="file" class="main__form-input main__form-input--file">
+                            <label class="custom-file">
+                                <input type="file" multiple class="visually-hidden">
+                                <span>Добавьте файлы</span>
+                              </label>
                         </div>
                         
                     </div>
