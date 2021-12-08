@@ -252,10 +252,11 @@
                             Файл с резюме
                         </label>
                         <div class="main__form-files">
-                            <label class="custom-file">
-                                <input type="file" multiple class="visually-hidden">
-                                <span>Добавьте файлы</span>
-                              </label>
+                            <input id="file" class="field-file__input" type="file" name="uploadFile"/>
+                            <label class="field-file__label" for="file">
+                                <div class="field-file__icon"></div>
+                                <span class="field-file__label--text">Выберите резюме для загрузки</span>
+                            </label>
                         </div>
                         
                     </div>
@@ -544,6 +545,21 @@
   <script src="js/main.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+  <script>
+  document.getElementById('file').addEventListener('change', function (e) {
+    // Проверяем, что только 1 файл был выбран
+    if (this.files && this.files.length == 1) {
+        const textContainer = this.nextElementSibling.querySelector('.field-file__label--text');
+        const fileName = e.target.value.split('\\').pop();
+        if (textContainer) {
+            textContainer.textContent = fileName || 'Выберите резюме для загрузки';
+            return true;
+        }
+    }
+      return false;
+    });
+  </script>
 </body>
 
 </html>
