@@ -100,11 +100,11 @@
         </ul>
       </nav>
 
-      <div class="header__search" data-toggle="search__fixed">
-        <svg>
-          <use xlink:href="img/sprite.svg#search_icon"></use>
-        </svg>
-      </div>
+      <button class="header__search-button">
+          <svg class="header__search">
+            <use xlink:href="img/sprite.svg#search_icon"></use>
+          </svg>
+      </button>
 
       <div class="header__adaptive m-menu">
         <a href="javascript:void(0);" class="menu-trigger">
@@ -119,18 +119,19 @@
 </header>
 
 
-
-
 <div class="search__fixed">
   <div class="container">
-    <form class="search__fixed-form" action="№">
-      <div class="search__fixed-field">
-        <input type="search" class="search__fixed-input" placeholder="Введите ключевой запрос">
-        <button class="search__fixed-button main__button btn-reset" type="submit" value="Найти">Найти</button>
-      </div>
-    </form>
-  </div>
+  <form class="search__fixed-form" action="#">
+    <div class="search__fixed-field">
+      <input type="search" class="search__fixed-input" placeholder="Введите ключевой запрос">
+      <button class="search__fixed-button main__button btn-reset" type="submit" value="Найти">Найти</button>
+    </div>
+  </form>
 </div>
+</div>
+
+
+
 
         <div class="breadcrumbs">
             <div class="container">
@@ -820,8 +821,7 @@
   </div>
 </div>
 
-<a href="#" onclick="openbox('box'); return false">Открыть</a>
-<div id="box" style="display: none;">Наш блок</div>
+
 
 
     </div>

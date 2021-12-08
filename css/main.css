@@ -750,7 +750,10 @@ details[open] summary ~ * {
   width: 35px;
   height: 35px;
   cursor: pointer;
+  display: flex;
   flex-shrink: 0;
+  background: none;
+  border: none;
 }
 .header__search svg, .header__adaptive svg {
   width: 100%;
@@ -759,6 +762,18 @@ details[open] summary ~ * {
   transition: all 0.2s;
 }
 .header__search:hover svg, .header__search:focus svg, .header__adaptive:hover svg, .header__adaptive:focus svg {
+  fill: var(--corporate-v-2);
+  transition: all 0.2s;
+}
+.header__search {
+  fill: var(--corporate-v-1);
+  transition: all 0.2s;
+}
+.header__search-button {
+  background: none;
+  border: none;
+}
+.header__search:hover, .header__search:focus {
   fill: var(--corporate-v-2);
   transition: all 0.2s;
 }
@@ -4643,7 +4658,7 @@ details[open] .vacancies__block-department {
   box-sizing: border-box;
   flex-shrink: 0;
   flex-grow: 0;
-  background: #fff;
+  background: var(--color-gray-100);
   width: 100%;
   max-width: 580px;
   overflow: visible;
@@ -4721,8 +4736,8 @@ details[open] .vacancies__block-department {
 }
 .hystmodal__form {
   margin-top: 40px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   grid-gap: 20px;
 }
 @media screen and (max-width: 767px) {
