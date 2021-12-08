@@ -100,7 +100,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: var(--color-gray-900);
-  padding: env(safe-area-inset-bottom, 20px);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 img {
