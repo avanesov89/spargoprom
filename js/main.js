@@ -22,12 +22,12 @@ $(function () {
     if (target.is(".header__search")) {
       event.preventDefault();
       var index = btn.index(target);
-      cur = block.eq(index).slideToggle();
+      cur = block.eq(index).fadeToggle();
       target.toggleClass("open");
     }
 
     if (target.closest(".search__fixed").length) return;
-    block.not(cur).slideUp("slow");
+    block.not(cur).fadeOut("slow");
     btn.not(target).removeClass("open");
   });
 }); // Accordeon

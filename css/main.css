@@ -599,6 +599,8 @@ svg {
   max-width: 300px;
   display: flex;
   flex-wrap: wrap;
+  display: none;
+  z-index: 100;
 }
 .cookies button {
   display: table;
@@ -882,6 +884,7 @@ details[open] summary ~ * {
 .header__search-button {
   background: none;
   border: none;
+  padding: 0;
 }
 .header__search:hover, .header__search:focus {
   fill: var(--corporate-v-2);
