@@ -296,7 +296,7 @@
             </p>
         </div>
         <div class="main__action-button">
-            <button class="main__button btn-reset">
+            <button class="main__button btn-reset" data-hystmodal=".modal-cooperation">
                 Оставить заявку
             </button>
         </div>
@@ -580,6 +580,65 @@
             <a href="reviews.html" title="#" class="main__button btn-reset">
                 Все отзывы
             </a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="hystmodal hystmodal--simple modal-cooperation" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+            <div class="modal">
+                <button class="hystmodal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon_close"></use>
+                      </svg>
+                </button>   
+                <h3 class="hystmodal__title">
+                    Заявка на интеграцию IT решений
+                </h3>
+  
+                <form action="#" class="hystmodal__form main__form">
+                    <div class="main__form-field">
+                        <label for="" class="main__form-label">
+                            Ваше имя
+                        </label>
+                        <input type="text" class="main__form-input" placeholder="Как к вам обращаться?">
+                    </div>
+
+                    <div class="main__form-field">
+                        <label for="" class="main__form-label">
+                            E-mail адрес
+                        </label>
+                        <input type="text" class="main__form-input" placeholder="name@domain.com">
+                    </div>
+        
+                    <div class="main__form-field">
+                        <label for="" class="main__form-label">
+                            Номер телефона
+                        </label>
+                        <input type="text" class="main__form-input" placeholder="+7 (___) ___-__-__">
+                    </div>
+
+                    <div class="main__form-field">
+                        <label for="" class="main__form-label">
+                            Сообщение
+                        </label>
+                        <textarea class="main__form-textarea" placeholder="Введите ваш комментарий или уточняющий вопрос"></textarea>
+                    </div>
+  
+                    <div class="main__form-field">
+
+                        <div class="main__form-licenze">
+                            <input type="checkbox" class="main__form-checkbox" id="licenze" name="licenze" value="yes" required />
+                            <label for="licenze" class="main__form-text">Я согласен с условиями <a href="#" title="#" class="main__form-link">обработки персональных данных</a></label>
+                        </div>
+
+                        <button class="main__button btn-reset">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
