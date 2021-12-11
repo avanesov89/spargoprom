@@ -924,6 +924,7 @@ details[open] summary ~ * {
   position: absolute;
   top: 152px;
   display: none;
+  z-index: 10;
 }
 @media screen and (max-width: 767px) {
   .search__fixed {
@@ -1621,13 +1622,20 @@ details[open] summary ~ * {
   height: 100%;
   padding: 25px 20px;
 }
-.services__item-link:hover .services__item-title, .services__item-link:focus .services__item-title, .services__item-link:active .services__item-title {
-  color: var(--corporate-v-3);
+.services__item-link:hover .services__item-title,
+.services__item-link:hover .services__item-image,
+.services__item-link:hover .services__item-description, .services__item-link:focus .services__item-title,
+.services__item-link:focus .services__item-image,
+.services__item-link:focus .services__item-description, .services__item-link:active .services__item-title,
+.services__item-link:active .services__item-image,
+.services__item-link:active .services__item-description {
+  color: var(--corporate-v-2);
+  fill: var(--corporate-v-2);
   transition: all 0.2s;
 }
 .services__item-title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--corporate-v-1);
   display: flex;
   align-items: center;
@@ -1646,17 +1654,23 @@ details[open] summary ~ * {
   object-fit: cover;
   margin-right: 10px;
   flex-shrink: 0;
+  fill: var(--corporate-v-1);
 }
 .services__item-block {
   background-color: rgba(248, 249, 250, 0.5);
   box-shadow: 0px 1px 6px rgba(52, 73, 94, 0.15);
   border-radius: 10px;
+  transition: all 0.2s;
+}
+.services__item-block:hover, .services__item-block:focus {
+  background-color: #fff;
+  transition: all 0.2s;
 }
 .services__item-description {
   font-size: 14px;
   line-height: 18px;
   color: var(--corporate-v-1);
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 20px;
 }
 .services__item-more {
@@ -3282,7 +3296,11 @@ details[open] .vacancies__block-department {
   background-color: #f8f9fa;
   border-radius: 4px;
   min-width: 320px;
-  padding: 30px;
+  transition: all 0.2s;
+}
+.about__all-block:hover, .about__all-block:focus {
+  background-color: #fff;
+  transition: all 0.2s;
 }
 .about__all-block:not(:last-child) {
   margin-right: 20px;
@@ -3294,7 +3312,6 @@ details[open] .vacancies__block-department {
 }
 @media screen and (max-width: 767px) {
   .about__all-block {
-    padding: 25px;
     min-width: 270px;
   }
 }
@@ -3311,18 +3328,24 @@ details[open] .vacancies__block-department {
   height: 100%;
   color: var(--corporate-v-1);
   transition: all 0.2s;
+  padding: 30px;
 }
 .about__all-item svg {
   fill: var(--corporate-v-1);
   transition: all 0.2s;
 }
 .about__all-item:hover, .about__all-item:focus {
-  color: var(--corporate-v-3);
+  color: var(--corporate-v-2);
   transition: all 0.2s;
 }
 .about__all-item:hover svg, .about__all-item:focus svg {
-  fill: var(--corporate-v-3);
+  fill: var(--corporate-v-2);
   transition: all 0.2s;
+}
+@media screen and (max-width: 767px) {
+  .about__all-item {
+    padding: 25px;
+  }
 }
 .about__all-img {
   width: 56px;
@@ -4359,8 +4382,8 @@ details[open] .vacancies__block-department {
 .business__list-item {
   display: flex;
   flex-direction: column;
-  padding: 25px;
-  background-color: #fff;
+  background-color: #f8f9fa;
+  transition: all 0.2s;
   border-radius: 4px;
   box-shadow: 0px 1px 6px rgba(52, 73, 94, 0.15);
   max-width: 360px;
@@ -4368,10 +4391,13 @@ details[open] .vacancies__block-department {
 .business__list-item:not(:last-child) {
   margin-right: 20px;
 }
+.business__list-item:hover, .business__list-item:focus {
+  background-color: #fff;
+  transition: all 0.2s;
+}
 @media screen and (max-width: 1399px) {
   .business__list-item {
     min-width: 270px;
-    padding: 20px;
   }
   .business__list-item:not(:last-child) {
     margin-right: 15px;
@@ -4379,15 +4405,24 @@ details[open] .vacancies__block-department {
 }
 .business__list-link {
   color: var(--corporate-v-1);
+  padding: 25px;
 }
 .business__list-link:focus, .business__list-link:hover {
   color: var(--corporate-v-2);
+}
+.business__list-link:focus .business__list-image, .business__list-link:hover .business__list-image {
+  fill: var(--corporate-v-2);
+}
+@media screen and (max-width: 1399px) {
+  .business__list-link {
+    padding: 20px;
+  }
 }
 .business__list-title {
   display: flex;
   align-items: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   max-width: 270px;
 }
 .business__list-image {
@@ -4397,11 +4432,12 @@ details[open] .vacancies__block-department {
   -o-object-fit: cover;
   object-fit: cover;
   margin-right: 15px;
+  fill: var(--corporate-v-1);
 }
 .business__list-content {
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 15px;
 }
 

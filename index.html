@@ -150,7 +150,9 @@
             <li class="business__list-item">
                 <a href="#" title="Производителям" class="business__list-link transition">
                     <div class="business__list-title">
-                        <img src="img/manufacture_top.png" alt="Производителям" class="business__list-image">
+                        <svg class="business__list-image">
+                            <use xlink:href="img/sprite.svg#main_manufacture"></use>
+                        </svg>
                         Производителям
                     </div>
                     <div class="business__list-content">
@@ -163,7 +165,9 @@
             <li class="business__list-item">
                 <a href="#" title="Медицинским организациям" class="business__list-link transition">
                     <div class="business__list-title">
-                        <img src="img/hospital.png" alt="Медицинским организациям" class="business__list-image">
+                        <svg class="business__list-image">
+                            <use xlink:href="img/sprite.svg#main_hospital"></use>
+                        </svg>
                         Медицинским организациям
                     </div>
                     <div class="business__list-content">
@@ -176,7 +180,9 @@
             <li class="business__list-item">
                 <a href="#" title="Аптечному бизнесу" class="business__list-link transition">
                     <div class="business__list-title">
-                        <img src="img/apteka.png" alt="Аптечному бизнесу" class="business__list-image">
+                        <svg class="business__list-image">
+                            <use xlink:href="img/sprite.svg#main_pharmacy"></use>
+                        </svg>
                         Аптечному бизнесу
                     </div>
                     <div class="business__list-content">
@@ -189,8 +195,9 @@
             <li class="business__list-item">
                 <a href="#" title="Государственным организациям" class="business__list-link transition">
                     <div class="business__list-title">
-                        <img src="img/official-documents.png" alt="Государственным организациям"
-                            class="business__list-image">
+                        <svg class="business__list-image">
+                            <use xlink:href="img/sprite.svg#main_state"></use>
+                        </svg>
                         Государственным организациям
                     </div>
                     <div class="business__list-content">
@@ -203,7 +210,9 @@
             <li class="business__list-item">
                 <a href="#" title="Дистрибьютерам" class="business__list-link transition">
                     <div class="business__list-title">
-                        <img src="img/pallet.png" alt="Дистрибьютерам" class="business__list-image">
+                        <svg class="business__list-image">
+                            <use xlink:href="img/sprite.svg#main_warehouse"></use>
+                        </svg>
                         Дистрибьютерам
                     </div>
                     <div class="business__list-content">
@@ -593,12 +602,12 @@
                 <button class="hystmodal__close" type="button" aria-label="Закрыть окно" data-hystclose>
                     <svg>
                         <use xlink:href="img/sprite.svg#icon_close"></use>
-                      </svg>
-                </button>   
+                    </svg>
+                </button>
                 <h3 class="hystmodal__title">
                     Заявка на интеграцию IT решений
                 </h3>
-  
+
                 <form action="#" class="hystmodal__form main__form">
                     <div class="main__form-field">
                         <label for="" class="main__form-label">
@@ -613,7 +622,7 @@
                         </label>
                         <input type="text" class="main__form-input" placeholder="name@domain.com">
                     </div>
-        
+
                     <div class="main__form-field">
                         <label for="" class="main__form-label">
                             Номер телефона
@@ -625,14 +634,17 @@
                         <label for="" class="main__form-label">
                             Сообщение
                         </label>
-                        <textarea class="main__form-textarea" placeholder="Введите ваш комментарий или уточняющий вопрос"></textarea>
+                        <textarea class="main__form-textarea"
+                            placeholder="Введите ваш комментарий или уточняющий вопрос"></textarea>
                     </div>
-  
+
                     <div class="main__form-field">
 
                         <div class="main__form-licenze">
-                            <input type="checkbox" class="main__form-checkbox" id="licenze" name="licenze" value="yes" required />
-                            <label for="licenze" class="main__form-text">Я согласен с условиями <a href="#" title="#" class="main__form-link">обработки персональных данных</a></label>
+                            <input type="checkbox" class="main__form-checkbox" id="licenze" name="licenze" value="yes"
+                                required />
+                            <label for="licenze" class="main__form-text">Я согласен с условиями <a href="#" title="#"
+                                    class="main__form-link">обработки персональных данных</a></label>
                         </div>
 
                         <button class="main__button btn-reset">Отправить заявку</button>
