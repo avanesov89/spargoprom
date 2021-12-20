@@ -116,9 +116,6 @@ img {
 a {
   text-decoration: none;
 }
-a:visited {
-  color: transparent;
-}
 
 p {
   font-size: 16px;
@@ -3106,8 +3103,8 @@ details[open] summary ~ * {
   }
 }
 .vacancies__open-position {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   color: var(--corporate-v-3);
   max-width: 390px;
   min-width: 390px;
@@ -3122,7 +3119,7 @@ details[open] summary ~ * {
 }
 .vacancies__open-salary {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--corporate-v-0);
   padding-left: 80px;
   white-space: nowrap;
@@ -3135,7 +3132,7 @@ details[open] summary ~ * {
 }
 .vacancies__open-city {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--corporate-v-0);
   text-align: right;
 }
@@ -3156,15 +3153,18 @@ details[open] summary ~ * {
     bottom: 10px;
   }
 }
+.vacancies__bottom .main__button:not(:last-child) {
+  margin-right: 30px;
+}
 @media screen and (max-width: 767px) {
   .vacancies__bottom .main__button {
     padding: 10px 15px;
     font-size: 15px;
     margin: 0;
   }
-}
-.vacancies__bottom .main__button:not(:last-child) {
-  margin-right: 30px;
+  .vacancies__bottom .main__button:not(:last-child) {
+    margin-right: 15px;
+  }
 }
 .vacancies__buttons {
   background: #FFFFFF;
