@@ -5130,6 +5130,9 @@ details[open] .vacancies__block-department {
   max-width: -moz-max-content;
   max-width: max-content;
 }
+.hystmodal .wpcf7-spinner {
+  position: absolute;
+}
 
 .blog__info-text {
   display: flex;
