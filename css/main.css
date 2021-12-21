@@ -89,6 +89,20 @@
 }
 html {
   box-sizing: border-box;
+  scrollbar-color: var(--color-gray-500) transparent;
+  scrollbar-width: thin;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  background-color: transparent;
+  border-radius: 10px;
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--color-gray-500);
 }
 
 :focus {
@@ -107,6 +121,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: var(--color-gray-900);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -156,6 +172,28 @@ pre {
 
 .is-hidden {
   display: none !important;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 0;
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: var(--color-status-succes);
+  color: var(--color-status-succes);
+}
+
+.wpcf7-list-item {
+  font-size: 14px;
+}
+
+.wpcf7-list-item-label {
+  display: flex;
 }
 
 .btn-reset {
@@ -1122,7 +1160,7 @@ details[open] summary ~ * {
   transition: all 0.2s;
 }
 .footer__mails-link:hover, .footer__mails-link:focus, .footer__mails-link:active {
-  color: var(--corporate-v-3);
+  color: #78acd9;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -1165,8 +1203,7 @@ details[open] summary ~ * {
   transition: all 0.2s;
 }
 .footer__phones-link:hover, .footer__phones-link:focus, .footer__phones-link:active {
-  color: var(--corporate-v-3);
-  text-decoration: underline;
+  color: #78acd9;
   transition: all 0.2s;
 }
 .footer__phones-tooltip {
@@ -1180,7 +1217,7 @@ details[open] summary ~ * {
   transition: all 0.2s;
 }
 .footer__phones-callback:hover, .footer__phones-callback:focus, .footer__phones-callback:active {
-  color: var(--corporate-v-3);
+  color: #78acd9;
   transition: all 0.2s;
 }
 .footer__phones::after {
@@ -1220,7 +1257,7 @@ details[open] summary ~ * {
   height: 20px;
 }
 .footer__social-link:hover svg, .footer__social-link:focus svg, .footer__social-link:active svg {
-  fill: var(--corporate-v-3);
+  fill: #78acd9;
   transition: all 0.2s;
 }
 .footer__social::after {
@@ -1266,15 +1303,15 @@ details[open] summary ~ * {
   margin-right: 10px;
 }
 .footer__list-link:hover, .footer__list-link:focus, .footer__list-link:active {
-  color: var(--corporate-v-3);
-  text-decoration: underline;
+  color: #78acd9;
+  text-decoration: none;
   transition: all 0.2s;
 }
 .footer__list-link:hover::before, .footer__list-link:focus::before, .footer__list-link:active::before {
-  background-color: var(--corporate-v-3);
+  background-color: #78acd9;
 }
 .footer__list-link--active {
-  color: var(--corporate-v-3);
+  color: #78acd9;
   text-decoration: underline;
 }
 .footer__subscription-text {
@@ -1334,7 +1371,7 @@ details[open] summary ~ * {
   display: block;
 }
 .footer__subscription-link {
-  color: var(--corporate-v-3);
+  color: #78acd9;
   text-decoration: underline;
   transition: all 0.2s;
 }
@@ -2489,9 +2526,13 @@ details[open] summary ~ * {
   display: flex;
   flex-direction: column;
 }
+.contacts__department-info--link {
+  transition: all 0.2s;
+}
 .contacts__department-info--link:hover, .contacts__department-info--link:focus {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--corporate-v-3);
+  transition: all 0.2s;
 }
 .contacts__department-tooltip {
   font-weight: 300;
@@ -2616,12 +2657,22 @@ details[open] summary ~ * {
   font-weight: 600;
   color: var(--corporate-v-1);
 }
+.contacts__scheme-bus p {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+}
 .contacts__scheme-tooltip {
   font-size: 14px;
   line-height: 18px;
   font-weight: 300;
   color: var(--corporate-v-1);
   margin-top: 15px;
+}
+.contacts__scheme-tooltip p {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .news__items {
@@ -2841,10 +2892,16 @@ details[open] summary ~ * {
   margin-bottom: 25px;
 }
 .news__element-item {
+  position: relative;
+}
+.news__element-item:not(:last-child) {
   padding-right: 10px;
   margin-right: 10px;
-  margin-bottom: 5px;
-  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .news__element-item {
+    margin-bottom: 5px;
+  }
 }
 .news__element-item span {
   font-family: OpenSans;
@@ -3106,8 +3163,8 @@ details[open] summary ~ * {
   }
 }
 .vacancies__open-position {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   color: var(--corporate-v-3);
   max-width: 390px;
   min-width: 390px;
@@ -3122,7 +3179,7 @@ details[open] summary ~ * {
 }
 .vacancies__open-salary {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--corporate-v-0);
   padding-left: 80px;
   white-space: nowrap;
@@ -3135,7 +3192,7 @@ details[open] summary ~ * {
 }
 .vacancies__open-city {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--corporate-v-0);
   text-align: right;
 }
@@ -3156,15 +3213,18 @@ details[open] summary ~ * {
     bottom: 10px;
   }
 }
+.vacancies__bottom .main__button:not(:last-child) {
+  margin-right: 30px;
+}
 @media screen and (max-width: 767px) {
   .vacancies__bottom .main__button {
     padding: 10px 15px;
     font-size: 15px;
     margin: 0;
   }
-}
-.vacancies__bottom .main__button:not(:last-child) {
-  margin-right: 30px;
+  .vacancies__bottom .main__button:not(:last-child) {
+    margin-right: 15px;
+  }
 }
 .vacancies__buttons {
   background: #FFFFFF;
@@ -3221,10 +3281,22 @@ details[open] .vacancies__block-department {
 }
 
 .about__director {
-  background-color: var(--color-gray-100);
   padding: 50px 0;
   margin: 35px 0 55px;
   width: 100%;
+  position: relative;
+}
+.about__director::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-gray-100);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
 }
 @media screen and (max-width: 1023px) {
   .about__director {
@@ -4376,6 +4448,7 @@ details[open] .vacancies__block-department {
   font-weight: 800;
   margin-top: 0;
   margin-bottom: 30px;
+  max-width: 800px;
 }
 @media screen and (max-width: 767px) {
   .main__slaider-title {
@@ -4389,6 +4462,7 @@ details[open] .vacancies__block-department {
   font-weight: 700;
   line-height: 30px;
   margin: 0;
+  max-width: 800px;
 }
 @media screen and (max-width: 767px) {
   .main__slaider-description {
@@ -4737,9 +4811,10 @@ details[open] .vacancies__block-department {
   color: var(--corporate-v-2);
 }
 .last__renewal-date {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "OpenSans";
+  font-weight: 600;
   color: var(--color-gray-600);
   margin-bottom: 10px;
 }
@@ -5000,7 +5075,7 @@ details[open] .vacancies__block-department {
   min-height: 30px;
   display: block;
 }
-.hystmodal__title {
+.hystmodal__title, .hystmodal h3 {
   font-size: 26px;
   line-height: 38px;
   font-weight: 600;
@@ -5009,7 +5084,7 @@ details[open] .vacancies__block-department {
   margin-bottom: 5px;
 }
 @media screen and (max-width: 767px) {
-  .hystmodal__title {
+  .hystmodal__title, .hystmodal h3 {
     font-size: 20px;
     line-height: 28px;
   }
