@@ -132,9 +132,6 @@ img {
 a {
   text-decoration: none;
 }
-a:visited {
-  color: transparent;
-}
 
 p {
   font-size: 16px;
@@ -927,6 +924,10 @@ details[open] summary ~ * {
 .header__menu-link:hover, .header__menu-link:focus {
   color: var(--corporate-v-2);
   transition: all 0.2s;
+}
+.header__menu-link--active {
+  color: var(--corporate-v-2);
+  border-bottom: 2px solid var(--corporate-v-2);
 }
 .header__search, .header__adaptive {
   width: 35px;
@@ -2915,8 +2916,9 @@ details[open] summary ~ * {
   background-color: var(--color-gray-600);
   position: absolute;
   right: 0;
-  top: 6px;
+  top: 50%;
   border-radius: 50%;
+  transform: translateY(-50%);
 }
 .news__element-date {
   font-family: OpenSans;
@@ -3644,6 +3646,10 @@ details[open] .vacancies__block-department {
 }
 .a-menu .menu__link:hover, .a-menu .menu__link:focus, .a-menu .menu__link:active {
   color: var(--corporate-v-2);
+}
+.a-menu .menu__link--active {
+  color: var(--corporate-v-2);
+  text-decoration: underline;
 }
 .a-menu .sub-menu {
   height: 0;
