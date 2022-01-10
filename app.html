@@ -93,7 +93,8 @@
         <ul class="header__menu list-reset">
           <li class="header__menu-item"><a href="#" class="header__menu-link">Наши решения</a></li>
           <li class="header__menu-item"><a href="#" class="header__menu-link">Разработка</a></li>
-          <li class="header__menu-item"><a href="hotline.html" class="header__menu-link">Поддержка</a></li>
+          <li class="header__menu-item"><a href="hotline.html"
+              class="header__menu-link header__menu-link--active">Поддержка</a></li>
           <li class="header__menu-item"><a href="about.html" class="header__menu-link">О компании</a></li>
           <li class="header__menu-item"><a href="hh.html" class="header__menu-link">Вакансии</a></li>
           <li class="header__menu-item"><a href="contacts.html" class="header__menu-link">Контакты</a></li>
@@ -101,9 +102,9 @@
       </nav>
 
       <button class="header__search-button">
-          <svg class="header__search">
-            <use xlink:href="img/sprite.svg#search_icon"></use>
-          </svg>
+        <svg class="header__search">
+          <use xlink:href="img/sprite.svg#search_icon"></use>
+        </svg>
       </button>
 
       <div class="header__adaptive m-menu">
@@ -121,17 +122,14 @@
 
 <div class="search__fixed">
   <div class="container">
-  <form class="search__fixed-form" action="#">
-    <div class="search__fixed-field">
-      <input type="search" class="search__fixed-input" placeholder="Введите ключевой запрос">
-      <button class="search__fixed-button main__button btn-reset" type="submit" value="Найти">Найти</button>
-    </div>
-  </form>
+    <form class="search__fixed-form" action="#">
+      <div class="search__fixed-field">
+        <input type="search" class="search__fixed-input" placeholder="Введите ключевой запрос">
+        <button class="search__fixed-button main__button btn-reset" type="submit" value="Найти">Найти</button>
+      </div>
+    </form>
+  </div>
 </div>
-</div>
-
-
-
 
     <div class="breadcrumbs">
       <div class="container">
@@ -586,7 +584,8 @@
           <li class="footer__list-item"><a href="reviews.html" title="Отзывы" class="footer__list-link">Отзывы</a></li>
           <li class="footer__list-item"><a href="news-category.html" title="Отзывы" class="footer__list-link">Новости -
               категория</a></li>
-          <li class="footer__list-item"><a href="news-page.html" title="Отзывы" class="footer__list-link">Новости -
+          <li class="footer__list-item"><a href="news-page.html" title="Отзывы"
+              class="footer__list-link footer__list-link--active">Новости -
               страница</a></li>
           <li class="footer__list-item"><a href="404.html" title="Отзывы" class="footer__list-link">404 ошибка</a></li>
           <li class="footer__list-item"><a href="hh.html" title="#" class="footer__list-link">Вакансии - категория</a>
@@ -597,9 +596,10 @@
           <li class="footer__list-item"><a href="page.html" title="#" class="footer__list-link">Информационная
               страница</a></li>
           <li class="footer__list-item"><a href="actual.html" title="#" class="footer__list-link">Актуально - категория
-                </a></li>
-          <li class="footer__list-item"><a href="actual-page.html" title="#" class="footer__list-link">Актуально - внутренняя
-                </a></li>
+            </a></li>
+          <li class="footer__list-item"><a href="actual-page.html" title="#" class="footer__list-link">Актуально -
+              внутренняя
+            </a></li>
         </ul>
       </nav>
     </div>
@@ -627,11 +627,13 @@
               внутренняя</a>
           </li>
           <li class="footer__list-item"><a href="blog.html" title="#" class="footer__list-link">Блог -
-            категория</a>
+              категория</a>
+          </li>
           <li class="footer__list-item"><a href="blog-page.html" title="#" class="footer__list-link">Блог -
               внутренняя</a>
           </li>
-        </li>
+          <li class="footer__list-item"><a href="author-page.html" title="#" class="footer__list-link">Материалы пользователя</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -675,14 +677,14 @@
         </div>
     </div>
     <nav>
-        <ul class="menu">       
+        <ul class="menu">
             <li class="menu__item">
                 <a href="/" title="#" class="menu__link transition">
                     Главная
                 </a>
             </li>
             <li class="menu__item">
-                <a href="about.html" title="О компании" class="menu__link transition">
+                <a href="about.html" title="О компании" class="menu__link menu__link--active transition">
                     О компании
                 </a>
             </li>
@@ -706,10 +708,17 @@
                     Услуги компании
                 </a>
                 <ul class="sub-menu">
-                    <li class="sub-menu__item"><a class="sub-menu__link transition" title="Внедрение программного обеспечения" href="services-page.html">Внедрение программного обеспечения</a></li>
-                    <li class="sub-menu__item"><a class="sub-menu__link transition" title="Сопровождение программного обеспечения" href="services-page.html">Сопровождение программного обеспечения</a></li>
-                    <li class="sub-menu__item"><a class="sub-menu__link transition" title="Обучение сотрудников"href="services-page.html">Обучение сотрудников</a></li>
-                    <li class="sub-menu__item"><a class="sub-menu__link transition" title="Обслуживание программного обеспечения"href="services-page.html">Обслуживание программного обеспечения</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__link transition"
+                            title="Внедрение программного обеспечения" href="services-page.html">Внедрение программного
+                            обеспечения</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__link transition"
+                            title="Сопровождение программного обеспечения" href="services-page.html">Сопровождение
+                            программного обеспечения</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__link transition" title="Обучение сотрудников"
+                            href="services-page.html">Обучение сотрудников</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__link transition"
+                            title="Обслуживание программного обеспечения" href="services-page.html">Обслуживание
+                            программного обеспечения</a></li>
                 </ul>
             </li>
             <li class="menu__item">
@@ -727,9 +736,9 @@
                     Лицензии и сертификаты
                 </a>
             </li>
-            
-            
-           
+
+
+
         </ul>
     </nav>
 </div>
