@@ -356,12 +356,12 @@
             </div>
 
             <div class="main__form-field main__form-field--full main__form-field--buttons">
-                <button class="main__button btn-reset">Отправить сообщение</button>
-
+                <input type="submit" value="Отправить сообщение" class="wpcf7-form-control has-spinner wpcf7-submit main__button btn-reset" id="contact-submit">
+                <span class="wpcf7-spinner"></span>
+                <p></p>
                 <div class="main__form-licenze">
-                    <input type="checkbox" class="main__form-checkbox" id="licenze" name="licenze" value="yes" required />
-                    <label for="licenze" class="main__form-text">Я согласен с условиями <a href="#" title="#" class="main__form-link">обработки персональных данных</a></label>
-                </div>
+                    <span class="wpcf7-form-control-wrap checkbox-400"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required"><span class="wpcf7-list-item first last"><label><input type="checkbox" name="checkbox-400[]" value="Я согласен с условиями"><span class="wpcf7-list-item-label">Я согласен с условиями</span></label></span></span></span>
+                    </div>
             </div>
         </form>
     </div>
