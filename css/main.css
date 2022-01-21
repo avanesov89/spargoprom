@@ -4175,6 +4175,7 @@ details[open] .vacancies__block-department {
   position: relative;
   padding-left: 40px;
   flex-direction: column;
+  font-weight: 600;
 }
 .app__download-item:hover, .app__download-item:focus {
   text-decoration: underline;
@@ -4187,7 +4188,7 @@ details[open] .vacancies__block-department {
   top: 3px;
 }
 .app__download-item span {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 /*Industry*/
