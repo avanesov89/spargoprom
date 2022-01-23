@@ -75,13 +75,6 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Nunito";
-  src: url("../fonts/../fonts/Nunitobold.woff2") format("woff2");
-  font-weight: 900;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
   font-family: "OpenSans";
   src: url("../fonts/../fonts/opensanssemibold.woff2") format("woff2");
   font-weight: 600;
@@ -324,6 +317,15 @@ pre {
 .main__button:hover, .main__button:focus, .main__button:active, .main__button.active {
   background-color: var(--color-gray-100);
   color: var(--corporate-v-2);
+  transition: all 0.2s;
+}
+.main__button-outline {
+  background-color: var(--color-gray-100);
+  color: var(--corporate-v-2);
+}
+.main__button-outline:hover, .main__button-outline:focus, .main__button-outline:active, .main__button-outline.active {
+  background-color: var(--corporate-v-2);
+  color: var(--color-gray-100);
   transition: all 0.2s;
 }
 
@@ -3948,11 +3950,6 @@ details[open] .vacancies__block-department {
 .app__presentation-item {
   padding: 80px 0;
 }
-@media screen and (max-width: 1919px) {
-  .app__presentation-item {
-    padding: 45px 0;
-  }
-}
 .app__presentation-item:nth-child(odd) {
   background-color: var(--color-gray-100);
 }
@@ -3974,7 +3971,7 @@ details[open] .vacancies__block-department {
   display: flex;
   border: 15px solid var(--color-gray-300);
   background-color: var(--color-gray-300);
-  border-radius: 10px;
+  border-radius: 4px;
   max-height: 450px;
   max-width: 750px;
   width: 100%;
@@ -4004,7 +4001,7 @@ details[open] .vacancies__block-department {
   object-fit: cover;
   width: auto;
   height: auto;
-  border-radius: 10px;
+  border-radius: 4px;
   overflow: hidden;
 }
 .app__presentation-title {
@@ -4015,12 +4012,15 @@ details[open] .vacancies__block-department {
   font-weight: 600;
 }
 .app__presentation-button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: table;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 @media screen and (max-width: 1023px) {
   .app__presentation-button {
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
   }
 }
 .app__modules {
@@ -4052,35 +4052,49 @@ details[open] .vacancies__block-department {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .app__modules-list {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 1023px) {
   .app__modules-list {
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 1280px) {
+  .app__modules-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+  }
+}
 .app__modules-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
   min-width: 100px;
   margin: 20px 30px;
   fill: var(--corporate-v-1);
   color: var(--corporate-v-1);
+  width: 100%;
 }
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1279px) {
   .app__modules-item {
-    min-width: 33.33%;
+    max-width: 45%;
     margin: 20px 0;
   }
 }
 @media screen and (max-width: 767px) {
   .app__modules-item {
-    min-width: 45%;
     margin: 15px 0;
+    max-width: 100%;
   }
 }
-.app__modules-item:focus, .app__modules-item:hover {
-  fill: var(--corporate-v-2);
-  color: var(--corporate-v-2);
+@media screen and (min-width: 1280px) {
+  .app__modules-item {
+    margin: 0;
+  }
 }
 .app__modules-img {
   width: 80px;
@@ -4091,6 +4105,8 @@ details[open] .vacancies__block-department {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 .app__modules-image {
   width: 50px;
@@ -4102,12 +4118,19 @@ details[open] .vacancies__block-department {
   width: 50px;
   height: 50px;
 }
+.app__modules-description {
+  font-size: 14px;
+}
+@media screen and (min-width: 1024px) {
+  .app__modules-description {
+    max-width: 60%;
+  }
+}
 .app__modules-name {
   font-size: 16px;
-  line-height: 18px;
-  text-align: center;
+  line-height: 20px;
   font-weight: 600;
-  margin-top: 15px;
+  margin-bottom: 10px;
 }
 .app__all {
   margin-bottom: 40px;
@@ -4189,6 +4212,96 @@ details[open] .vacancies__block-department {
 }
 .app__download-item span {
   font-weight: 800;
+}
+.app__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  gap: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.app__options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1279px) {
+  .app__options {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .app__options {
+    margin-top: 25px;
+    align-content: center;
+    flex-direction: column;
+  }
+}
+.app__options-item {
+  background-color: rgba(248, 249, 250, 0.5);
+  box-shadow: 0px 1px 6px rgba(52, 73, 94, 0.15);
+  border-radius: 4px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  color: var(--corporate-v-1);
+  max-width: 420px;
+  width: 100%;
+}
+@media screen and (max-width: 1279px) {
+  .app__options-item {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .app__options-item {
+    padding: 20px;
+  }
+  .app__options-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .app__options-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.app__options-title {
+  color: var(--corporate-v-1);
+  text-align: center;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 1023px) {
+  .app__options-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+.app__options-price {
+  padding-top: 50px;
+  text-align: center;
+  margin-top: auto;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 1023px) {
+  .app__options-price {
+    margin-bottom: 15px;
+  }
+}
+.app__options-price svg {
+  width: 14px;
+  height: 14px;
+}
+.app__options .app__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*Industry*/
