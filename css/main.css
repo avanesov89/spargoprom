@@ -5446,6 +5446,11 @@ details[open] .vacancies__block-department {
   transform: translateX(-50%);
 }
 
+#wpcf7-f5-o1 .hystmodal__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .blog__info-text {
   display: flex;
   flex-direction: column;
