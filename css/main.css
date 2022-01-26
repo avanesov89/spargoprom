@@ -4312,15 +4312,10 @@ details[open] .vacancies__block-department {
 }
 .app__options {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 30px;
-}
-@media screen and (max-width: 1279px) {
-  .app__options {
-    justify-content: center;
-  }
 }
 @media screen and (max-width: 1023px) {
   .app__options {
@@ -4389,7 +4384,6 @@ details[open] .vacancies__block-department {
   font-weight: 800;
   font-size: 26px;
   line-height: 30px;
-  margin-left: 5px;
 }
 .app__options-price svg {
   width: 15px;
@@ -4398,7 +4392,7 @@ details[open] .vacancies__block-department {
 }
 .app__options-tooltip {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 20px;
   font-weight: 300;
   color: var(--color-gray-600);
   padding-bottom: 20px;
