@@ -4333,6 +4333,11 @@ details[open] .vacancies__block-department {
   margin-bottom: 25px;
   color: var(--corporate-v-1);
 }
+@media screen and (max-width: 1023px) {
+  .app__options-headline {
+    font-size: 20px;
+  }
+}
 .app__options-item {
   background-color: rgba(248, 249, 250, 0.5);
   box-shadow: 0px 1px 6px rgba(52, 73, 94, 0.15);
