@@ -4389,6 +4389,7 @@ details[open] .vacancies__block-department {
   font-weight: 800;
   font-size: 26px;
   line-height: 30px;
+  text-transform: lowercase;
 }
 .app__options-price svg {
   width: 15px;
