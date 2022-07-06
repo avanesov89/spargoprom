@@ -7065,6 +7065,9 @@ details[open] .vacancies__block-department {
   color: var(--corporate-v-0);
   margin-bottom: 30px;
 }
+.webinars__form-title--closed {
+  color: var(--color-status-danger);
+}
 .webinars__form-title span {
   color: var(--color-status-danger);
   font-weight: bold;
