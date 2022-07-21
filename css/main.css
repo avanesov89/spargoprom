@@ -7101,8 +7101,11 @@ details[open] .vacancies__block-department {
 }
 @media screen and (max-width: 1023px) {
   .all__blog {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
+}
+.all__blog-prev {
+  padding-bottom: 30px;
 }
 .all__blog-head {
   display: flex;
@@ -7152,6 +7155,16 @@ details[open] .vacancies__block-department {
 @media screen and (max-width: 1023px) {
   .all__blog-link {
     display: none;
+  }
+}
+.all__blog-button {
+  margin: 20px 0 0;
+  display: none;
+  justify-content: center;
+}
+@media screen and (max-width: 1023px) {
+  .all__blog-button {
+    display: flex;
   }
 }
 .all__blog-description {
